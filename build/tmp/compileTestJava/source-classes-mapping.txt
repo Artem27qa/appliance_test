@@ -1,0 +1,8 @@
+Ampliance/app/Application.java
+ Ampliance.app.Application
+Ampliance/app/ProfileData.java
+ Ampliance.app.ProfileData
+Ampliance/app/ProfilePage.java
+ Ampliance.app.ProfilePage
+Ampliance/test/TestingClass.java
+ Ampliance.test.TestingClass

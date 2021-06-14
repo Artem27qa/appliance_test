@@ -1,0 +1,30 @@
+plugins {
+    id 'java'
+}
+
+group 'org.appliance'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.testng:testng:7.1.0'
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'org.assertj:assertj-core:3.19.0'
+    implementation 'io.rest-assured:rest-assured:4.4.0'
+    implementation 'com.google.code.gson:gson:2.8.7'
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useTestNG()
+}
+
+task runTest(type:  Test) {
+    useTestNG()
+}
